@@ -36,3 +36,149 @@
     transform: rotate(360deg);
   }
 }
+
+/* Light mode styles (default) */
+.App {
+  background: #fff;
+  color: #1B2E20;
+  min-height: 100vh;
+}
+
+/* Dark mode styles */
+.App.dark {
+  background: #181c1f;
+  color: #f3f3f3;
+}
+
+.App.dark h1,
+.App.dark h2,
+.App.dark h3,
+.App.dark .hero h1,
+.App.dark .projects h2,
+.App.dark .journey h2,
+.App.dark .skills h2,
+.App.dark .tech-stack h2,
+.App.dark .features .feature-title,
+.App.dark .connect h2 {
+  color: #fff;
+}
+
+.App.dark .navbar {
+  background: #23272b;
+  color: #f3f3f3;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.App.dark .navbar-logo {
+  color: #66BB6A;
+}
+
+.App.dark .navbar-links li a {
+  color: #f3f3f3;
+}
+
+.App.dark .navbar-links li a:hover {
+  color: #43A047;
+}
+
+.App.dark .navbar-theme-toggle {
+  color: #66BB6A;
+}
+
+.App.dark .hero {
+  background: #23272b;
+  color: #f3f3f3;
+}
+
+.App.dark .hero-name {
+  color: #66BB6A;
+}
+
+.App.dark .hero-tagline,
+.App.dark .hero-role {
+  color: #b0b8c1;
+}
+
+.App.dark .btn-primary {
+  background: #43A047;
+  color: #fff;
+}
+
+.App.dark .btn-primary:hover {
+  background: #388E3C;
+}
+
+.App.dark .btn-secondary {
+  background: #23272b;
+  color: #66BB6A;
+  border: 1.5px solid #66BB6A;
+}
+
+.App.dark .btn-secondary:hover {
+  background: #23272b;
+  color: #43A047;
+}
+
+.App.dark .projects,
+.App.dark .skills,
+.App.dark .tech-stack,
+.App.dark .journey,
+.App.dark .features {
+  background: #23272b;
+  color: #f3f3f3;
+}
+
+.App.dark .project-card,
+.App.dark .skill-card,
+.App.dark .tech-card,
+.App.dark .timeline-card,
+.App.dark .feature-card {
+  background: #23272b;
+  color: #f3f3f3;
+  box-shadow: 0 2px 12px rgba(67,160,71,0.10);
+}
+
+.App.dark .project-desc,
+.App.dark .feature-desc,
+.App.dark .timeline-desc {
+  color: #b0b8c1;
+}
+
+.App.dark .tech-badge {
+  background: #26332a;
+  color: #66BB6A;
+}
+
+.App.dark .skill-bar-bg {
+  background: #26332a;
+}
+
+.App.dark .skill-bar-fill {
+  background: #66BB6A;
+}
+
+.App.dark .timeline-line,
+.App.dark .timeline-dot {
+  background: #43A047;
+}
+
+.App.dark .timeline-year {
+  color: #66BB6A;
+}
+
+.App.dark .connect {
+  background: #23272b;
+  color: #f3f3f3;
+}
+
+.App.dark .connect-card {
+  color: #f3f3f3;
+}
+
+.App.dark .connect-card:hover {
+  color: #66BB6A;
+}
+
+.App.dark .connect-icon {
+  filter: drop-shadow(0 0 2px #181c1f);
+}
