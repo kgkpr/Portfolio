@@ -10,21 +10,6 @@ const roles = [
 const TYPING_SPEED = 80;
 const PAUSE_DURATION = 1200;
 
-// Generate random properties for falling circles
-const NUM_CIRCLES = 12;
-const circles = Array.from({ length: NUM_CIRCLES }).map((_, i) => {
-  const left = Math.random() * 95; // percent
-  const size = 24 + Math.random() * 32; // px
-  const duration = 4 + Math.random() * 4; // seconds
-  const delay = Math.random() * 4; // seconds
-  const color = [
-    'rgba(67,160,71,0.13)',
-    'rgba(102,187,106,0.13)',
-    'rgba(33,150,243,0.10)'
-  ][Math.floor(Math.random() * 3)];
-  return { left, size, duration, delay, color, key: i };
-});
-
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayed, setDisplayed] = useState('');
@@ -62,22 +47,6 @@ const Hero = () => {
 
   return (
     <section className={`hero${visible ? ' visible' : ''}`} id="home">
-      <div className="falling-circles">
-        {circles.map((c) => (
-          <div
-            className="falling-circle"
-            key={c.key}
-            style={{
-              left: `${c.left}%`,
-              width: c.size,
-              height: c.size,
-              background: c.color,
-              animationDuration: `${c.duration}s`,
-              animationDelay: `${c.delay}s`
-            }}
-          />
-        ))}
-      </div>
       <div className="hero-content">
         <h1>Hi, I'm <span className="hero-name">Pramudi</span></h1>
         <p className="hero-tagline">Code is my compass. Curiosity is my fuel. Growth is my destination.</p>

@@ -7,16 +7,30 @@
   padding: 3rem 1rem 2rem 1rem;
   border-radius: 0 0 2rem 2rem;
   margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 700px) {
+  .achievements-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
 }
 
 .achievements-card {
   background: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px rgba(67,160,71,0.10);
-  padding: 2.5rem 2rem;
-  max-width: 700px;
+  padding: 1.5rem 1.2rem;
+  max-width: 320px;
   width: 100%;
   text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.achievements-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(102,187,106,0.16);
 }
 
 .achievements-title {
@@ -27,8 +41,11 @@
 }
 
 .achievements-image {
-  width: 100%;
+  width: auto;
   max-width: 400px;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
   border-radius: 1rem;
   margin-bottom: 1.2rem;
   box-shadow: 0 2px 12px rgba(67,160,71,0.10);
@@ -37,6 +54,56 @@
 .achievements-desc {
   font-size: 1.1rem;
   color: #444;
+}
+
+.achievements-main-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #1B2E20;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(67,160,71,0.08);
+  border-bottom: 3px solid #43A047;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.achievements-subtitle {
+  font-size: 1.15rem;
+  color: #388E3C;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  margin-top: -1.2rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-24px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+.achievements-subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.35s;
+}
+
+.achievements-year {
+  font-size: 1.1rem;
+  color: #43A047;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  margin-top: -0.5rem;
+  letter-spacing: 1px;
+}
+
+.achievements-page {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+.achievements-page.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .App.dark .achievements-section {
@@ -55,4 +122,18 @@
 
 .App.dark .achievements-desc {
   color: #b0b8c1;
+}
+
+.App.dark .achievements-main-title {
+  color: #fff;
+  border-bottom: 3px solid #66BB6A;
+  text-shadow: 0 2px 12px rgba(67,160,71,0.18);
+}
+
+.App.dark .achievements-subtitle {
+  color: #b0b8c1;
+}
+
+.App.dark .achievements-year {
+  color: #66BB6A;
 } 

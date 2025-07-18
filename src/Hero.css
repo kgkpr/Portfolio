@@ -56,36 +56,6 @@
   100% { transform: translateY(-40px) scale(1.08); }
 }
 
-.falling-circles {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-.falling-circle {
-  position: absolute;
-  top: -60px;
-  border-radius: 50%;
-  opacity: 0.18;
-  filter: blur(4px);
-  animation: fallingCircleMove linear infinite;
-}
-@keyframes fallingCircleMove {
-  0% {
-    top: -60px;
-    opacity: 0.18;
-    transform: scale(1) translateX(0);
-  }
-  80% {
-    opacity: 0.18;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-    transform: scale(1.08) translateX(20px);
-  }
-}
-
 .hero-content, .hero-image {
   position: relative;
   z-index: 1;

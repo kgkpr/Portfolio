@@ -1,258 +1,258 @@
 .about-section {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 80vh;
-  background: #f4fdf6;
-  padding: 3rem 1rem 2rem 1rem;
-  border-radius: 0 0 2rem 2rem;
-  margin-bottom: 2rem;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
-}
-
-.about-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about-content {
-  background: #fff;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px rgba(67,160,71,0.10);
-  padding: 2.5rem 2rem;
-  max-width: 700px;
-  width: 100%;
-}
-
-.about-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.2rem;
-  color: #1B2E20;
-}
-
-.about-name {
-  color: #43A047;
-  font-weight: 600;
-}
-
-.about-highlight {
-  color: #2196f3;
-  font-weight: 600;
-}
-
-.about-intro, .about-story {
-  font-size: 1.15rem;
-  color: #444;
-  margin-bottom: 1.1rem;
-  line-height: 1.7;
-}
-
-.about-section-block {
-  margin-bottom: 2rem;
-}
-
-.about-subtitle {
-  font-size: 1.3rem;
-  color: #43A047;
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.about-list {
-  list-style: disc inside;
-  color: #333;
-  font-size: 1.08rem;
-  margin-left: 1rem;
-  padding-left: 0.5rem;
-}
-
-.about-list li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-.about-anim {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s cubic-bezier(.4,0,.2,1), transform 0.9s cubic-bezier(.4,0,.2,1);
-}
-
-.about-anim.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about-timeline {
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.about-timeline-row {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  padding: 0.7rem 1.2rem;
-  background: #f4fdf6;
-  border-radius: 0.7rem;
-  box-shadow: 0 1px 6px rgba(67,160,71,0.06);
-  font-size: 1.08rem;
-}
-
-.about-timeline-year {
-  font-weight: 700;
-  color: #43A047;
-  min-width: 56px;
-  font-size: 1.08rem;
-}
-
-.about-timeline-milestone {
-  color: #1B2E20;
-  font-weight: 500;
-}
-
-.about-education {
-  margin-top: 1.1rem;
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-.about-edu-item {
-  background: #f4fdf6;
-  border-radius: 0.7rem;
-  box-shadow: 0 1px 6px rgba(67,160,71,0.06);
-  padding: 0.9rem 1.2rem;
-}
-
-.about-edu-institute {
-  font-weight: 700;
-  color: #2196f3;
-  font-size: 1.08rem;
-}
-
-.about-edu-degree {
-  color: #1B2E20;
-  font-weight: 500;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
-}
-
-.about-edu-years {
-  color: #43A047;
-  font-size: 0.98rem;
-  font-weight: 500;
-}
-
-.about-resume-link {
-  display: inline-block;
-  margin-top: 1.1rem;
-  padding: 0.7rem 1.5rem;
-  background: #43A047;
-  color: #fff;
-  border-radius: 0.5rem;
-  font-size: 1.08rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.about-resume-link:hover {
-  background: #388E3C;
-  color: #fff;
-}
-
-@media (max-width: 700px) {
-  .about-content {
-    padding: 1.2rem 0.7rem;
-    border-radius: 1rem;
-  }
-  .about-title {
-    font-size: 2rem;
-  }
-  .about-section {
-    padding: 1.5rem 0.2rem;
-  }
-  .about-timeline-row {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
-    gap: 0.3rem;
-    font-size: 0.98rem;
-    padding: 0.7rem 0.6rem;
+    min-height: 80vh;
+    background: #f4fdf6;
+    padding: 3rem 1rem 2rem 1rem;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
   }
+  
+  .about-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-content {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(67,160,71,0.10);
+    padding: 2.5rem 2rem;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: #1B2E20;
+  }
+  
+  .about-name {
+    color: #43A047;
+    font-weight: 600;
+  }
+  
+  .about-highlight {
+    color: #2196f3;
+    font-weight: 600;
+  }
+  
+  .about-intro, .about-story {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .about-section-block {
+    margin-bottom: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.3rem;
+    color: #43A047;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+  
+  .about-list {
+    list-style: disc inside;
+    color: #333;
+    font-size: 1.08rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+  }
+  
+  .about-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .about-anim {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s cubic-bezier(.4,0,.2,1), transform 0.9s cubic-bezier(.4,0,.2,1);
+  }
+  
+  .about-anim.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-timeline {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .about-timeline-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    background: #f4fdf6;
+    border-radius: 0.7rem;
+    box-shadow: 0 1px 6px rgba(67,160,71,0.06);
+    font-size: 1.08rem;
+  }
+  
   .about-timeline-year {
-    min-width: 0;
-    font-size: 0.98rem;
+    font-weight: 700;
+    color: #43A047;
+    min-width: 56px;
+    font-size: 1.08rem;
   }
-}
-
-.App.dark .about-content {
-  background: #23272b;
-  color: #f3f3f3;
-  box-shadow: 0 4px 24px rgba(67,160,71,0.18);
-}
-
-.App.dark .about-title {
-  color: #fff;
-}
-
-.App.dark .about-name {
-  color: #66BB6A;
-}
-
-.App.dark .about-highlight {
-  color: #64b5f6;
-}
-
-.App.dark .about-intro,
-.App.dark .about-story {
-  color: #b0b8c1;
-}
-
-.App.dark .about-section-block {
-  background: transparent;
-}
-
-.App.dark .about-subtitle {
-  color: #66BB6A;
-}
-
-.App.dark .about-list {
-  color: #e0e0e0;
-}
-
-.App.dark .about-timeline-row,
-.App.dark .about-edu-item {
-  background: #26332a;
-  color: #f3f3f3;
-}
-
-.App.dark .about-timeline-year,
-.App.dark .about-edu-years {
-  color: #66BB6A;
-}
-
-.App.dark .about-timeline-milestone,
-.App.dark .about-edu-institute {
-  color: #64b5f6;
-}
-
-.App.dark .about-edu-degree {
-  color: #f3f3f3;
-}
-
-.App.dark .about-resume-link {
-  background: #66BB6A;
-  color: #23272b;
-}
-
-.App.dark .about-resume-link:hover {
-  background: #43A047;
-  color: #fff;
-} 
+  
+  .about-timeline-milestone {
+    color: #1B2E20;
+    font-weight: 500;
+  }
+  
+  .about-education {
+    margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  
+  .about-edu-item {
+    background: #f4fdf6;
+    border-radius: 0.7rem;
+    box-shadow: 0 1px 6px rgba(67,160,71,0.06);
+    padding: 0.9rem 1.2rem;
+  }
+  
+  .about-edu-institute {
+    font-weight: 700;
+    color: #2196f3;
+    font-size: 1.08rem;
+  }
+  
+  .about-edu-degree {
+    color: #1B2E20;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .about-edu-years {
+    color: #43A047;
+    font-size: 0.98rem;
+    font-weight: 500;
+  }
+  
+  .about-resume-link {
+    display: inline-block;
+    margin-top: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    background: #43A047;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .about-resume-link:hover {
+    background: #388E3C;
+    color: #fff;
+  }
+  
+  @media (max-width: 700px) {
+    .about-content {
+      padding: 1.2rem 0.7rem;
+      border-radius: 1rem;
+    }
+    .about-title {
+      font-size: 2rem;
+    }
+    .about-section {
+      padding: 1.5rem 0.2rem;
+    }
+    .about-timeline-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      font-size: 0.98rem;
+      padding: 0.7rem 0.6rem;
+    }
+    .about-timeline-year {
+      min-width: 0;
+      font-size: 0.98rem;
+    }
+  }
+  
+  .App.dark .about-content {
+    background: #23272b;
+    color: #f3f3f3;
+    box-shadow: 0 4px 24px rgba(67,160,71,0.18);
+  }
+  
+  .App.dark .about-title {
+    color: #fff;
+  }
+  
+  .App.dark .about-name {
+    color: #66BB6A;
+  }
+  
+  .App.dark .about-highlight {
+    color: #64b5f6;
+  }
+  
+  .App.dark .about-intro,
+  .App.dark .about-story {
+    color: #b0b8c1;
+  }
+  
+  .App.dark .about-section-block {
+    background: transparent;
+  }
+  
+  .App.dark .about-subtitle {
+    color: #66BB6A;
+  }
+  
+  .App.dark .about-list {
+    color: #e0e0e0;
+  }
+  
+  .App.dark .about-timeline-row,
+  .App.dark .about-edu-item {
+    background: #26332a;
+    color: #f3f3f3;
+  }
+  
+  .App.dark .about-timeline-year,
+  .App.dark .about-edu-years {
+    color: #66BB6A;
+  }
+  
+  .App.dark .about-timeline-milestone,
+  .App.dark .about-edu-institute {
+    color: #64b5f6;
+  }
+  
+  .App.dark .about-edu-degree {
+    color: #f3f3f3;
+  }
+  
+  .App.dark .about-resume-link {
+    background: #66BB6A;
+    color: #23272b;
+  }
+  
+  .App.dark .about-resume-link:hover {
+    background: #43A047;
+    color: #fff;
+  } 

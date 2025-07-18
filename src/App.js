@@ -31,7 +31,6 @@ function App() {
                 <TechStack />
                 <Journey />
                 <Features />
-                <Connect />
               </>
             }
           />
@@ -39,6 +38,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/achievements" element={<Achievements />} />
         </Routes>
+        <Connect />
       </Router>
     </div>
   );

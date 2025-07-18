@@ -101,4 +101,36 @@
     max-width: 90vw;
     padding: 1rem 1rem 1rem 1rem;
   }
+}
+
+.App.dark .journey {
+  background: #23272b;
+  color: #f3f3f3;
+}
+
+.App.dark .journey h2 {
+  color: #fff;
+}
+
+.App.dark .timeline-card {
+  background: #23272b;
+  color: #f3f3f3;
+  box-shadow: 0 2px 12px rgba(67,160,71,0.13);
+}
+
+.App.dark .timeline-year {
+  color: #66BB6A;
+}
+
+.App.dark .timeline-title {
+  color: #fff;
+}
+
+.App.dark .timeline-desc {
+  color: #b0b8c1;
+}
+
+.App.dark .timeline-dot,
+.App.dark .timeline-line {
+  background: #66BB6A;
 } 
