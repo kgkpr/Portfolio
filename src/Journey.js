@@ -36,7 +36,9 @@ const Journey = () => {
   useEffect(() => {
     const observer = new window.IntersectionObserver(
       ([entry]) => {
-        setVisible(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setVisible(prev => prev ? prev : true);
+        }
       },
       { threshold: 0.2 }
     );

@@ -70,7 +70,7 @@
 }
 
 .App.dark .navbar-logo {
-  color: #66BB6A;
+  color: #43A047;
 }
 
 .App.dark .navbar-links li a {
@@ -82,7 +82,7 @@
 }
 
 .App.dark .navbar-theme-toggle {
-  color: #66BB6A;
+  color: #43A047;
 }
 
 .App.dark .hero {

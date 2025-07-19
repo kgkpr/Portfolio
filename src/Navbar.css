@@ -36,8 +36,29 @@
   color: #66BB6A;
 }
 
+.navbar-links li a.active {
+  color: #43A047;
+  font-weight: 700;
+}
+
 .navbar-theme-toggle {
   font-size: 1.5rem;
   cursor: pointer;
   color: #43A047;
+}
+
+.App .navbar-logo,
+.App.dark .navbar-logo {
+  color: #43A047 !important;
+}
+
+.App .navbar-theme-toggle,
+.App.dark .navbar-theme-toggle {
+  color: #43A047 !important;
+}
+
+.App .navbar-links li a.active,
+.App.dark .navbar-links li a.active {
+  color: #43A047 !important;
+  font-weight: 700;
 } 

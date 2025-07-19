@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 import './Skills.css';
 
 const skills = [
-  { name: 'React', percent: 90 },
-  { name: 'TypeScript', percent: 85 },
-  { name: 'Node.js', percent: 80 },
+  { name: 'AI Prompting', percent: 90 },
+  { name: 'Version Control (Git & GitHub)', percent: 80 },
+  { name: 'Problem Solving & Debugging', percent: 75 },
   { name: 'UI/UX Design', percent: 75 },
 ];
 
@@ -15,7 +15,9 @@ const Skills = () => {
   useEffect(() => {
     const observer = new window.IntersectionObserver(
       ([entry]) => {
-        setAnimate(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setAnimate(prev => prev ? prev : true);
+        }
       },
       { threshold: 0.3 }
     );

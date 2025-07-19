@@ -86,8 +86,7 @@ const About = () => {
               <div className="about-edu-years">2022 – Present</div>
             </div>
             <div className="about-edu-item">
-              <div className="about-edu-institute">Sanghamitta College, Galle</div>
-              <div className="about-edu-degree">GCE A/L (Mathematics Stream)</div>
+              <div className="about-edu-institute">GCE A/L – Mathematics Stream</div>
               <div className="about-edu-years">Completed in 2021</div>
             </div>
           </div>

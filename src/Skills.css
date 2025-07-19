@@ -85,4 +85,31 @@
     width: 90%;
     min-width: 0;
   }
+}
+
+.App.dark .skills {
+  background: #23272b;
+  color: #f3f3f3;
+}
+
+.App.dark .skill-card {
+  background: #181c1f;
+  color: #f3f3f3;
+  box-shadow: 0 2px 12px rgba(67,160,71,0.13);
+}
+
+.App.dark .skill-name {
+  color: #f3f3f3;
+}
+
+.App.dark .skill-percent {
+  color: #66BB6A;
+}
+
+.App.dark .skill-bar-bg {
+  background: #26332a;
+}
+
+.App.dark .skill-bar-fill {
+  background: #66BB6A;
 } 

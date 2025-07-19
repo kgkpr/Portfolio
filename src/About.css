@@ -256,3 +256,7 @@
     background: #43A047;
     color: #fff;
   } 
+
+.App.dark .about-section {
+  background: #181c1f;
+} 
